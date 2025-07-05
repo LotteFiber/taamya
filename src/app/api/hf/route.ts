@@ -20,7 +20,7 @@ export async function POST(req: NextRequest) {
             content: messageContent
           }
         ],
-        max_tokens: 1000
+        max_tokens: 2048
       })
 
       const rawContent = out.choices[0].message.content ?? ''
